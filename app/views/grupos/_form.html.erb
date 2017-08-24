@@ -1,0 +1,22 @@
+<%= form_with(model: grupo, local: true) do |form| %>
+  <% if grupo.errors.any? %>
+    <div id="error_explanation">
+      <h2> Errores en este formulario </h2>
+
+      <ul>
+      <% grupo.errors.full_messages.each do |mensaje| %>
+        <li><%= mensaje %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :nombre %>
+    <%= form.text_field :nombre, id: :grupo_nombre %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit "Grabar" %>
+  </div>
+<% end %>
