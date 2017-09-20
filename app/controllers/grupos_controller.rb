@@ -5,7 +5,11 @@ class GruposController < ApplicationController
   # GET /grupos.json
   def index
     @grupos = Grupo.all
-  end
+    Contacto.decidir(@grupos)
+    puts '................'
+    puts params[:contador].inspect #=> me trae nil, cuando quiero que me traiga el total de buenos y malos 
+    puts '................'
+   end
 
   # GET /grupos/1
   # GET /grupos/1.json
