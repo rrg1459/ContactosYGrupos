@@ -1,24 +1,7 @@
-# README
+se agrega recomendacion de developer 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+del issue
 
-* Ruby version
+https://es.stackoverflow.com/questions/103461/pasar-hash-del-modelo-al-controlador?noredirect=1#comment193133_103461
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

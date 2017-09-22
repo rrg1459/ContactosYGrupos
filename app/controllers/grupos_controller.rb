@@ -6,9 +6,10 @@ class GruposController < ApplicationController
   def index
     @grupos = Grupo.all
     Contacto.decidir(@grupos)
-    puts '................'
-    puts params[:contador].inspect #=> me trae nil, cuando quiero que me traiga el total de buenos y malos 
-    puts '................'
+    contador = Contacto.decidir(@grupos)
+    puts '......1..........'
+    puts contador.inspect #=> me trae nil, cuando quiero que me traiga el total de buenos y malos 
+    puts '.......2.........'
    end
 
   # GET /grupos/1
